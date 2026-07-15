@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="54" y1="34" x2="456" y2="482" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C7BFF"/>
+      <stop offset="0.5" stop-color="#33D6FF"/>
+      <stop offset="1" stop-color="#FF5F8F"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="112" y1="88" x2="392" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="white" stop-opacity="0.62"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="142" fill="#080910"/>
+  <circle cx="256" cy="256" r="178" fill="url(#bg)" opacity="0.22" filter="url(#shadow)"/>
+  <path d="M112 362L208 126L263 126L166 362H112Z" fill="url(#shine)"/>
+  <path d="M223 362L318 126H371L276 362H223Z" fill="url(#shine)" opacity="0.92"/>
+  <path d="M195 214H333L310 272H171L195 214Z" fill="url(#bg)"/>
+  <circle cx="400" cy="112" r="18" fill="#FF5F8F"/>
+</svg>

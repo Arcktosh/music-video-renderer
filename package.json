@@ -1,0 +1,41 @@
+{
+  "name": "music-video-render",
+  "version": "1.2.0",
+  "private": true,
+  "description": "A configurable Remotion music-video system with six responsive templates, automatic track-length timelines, and Studio audio asset loading.",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "check": "tsc --noEmit",
+    "compositions": "remotion compositions src/index.ts",
+    "render": "remotion render src/index.ts MusicVideo-Landscape out/music-video-landscape.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:landscape": "remotion render src/index.ts MusicVideo-Landscape out/music-video-landscape.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:square": "remotion render src/index.ts MusicVideo-Square out/music-video-square.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:vertical": "remotion render src/index.ts MusicVideo-Vertical out/music-video-vertical.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:custom": "remotion render src/index.ts MusicVideo-Landscape out/music-video-custom.mp4 --props=props/custom.json --codec=h264 --pixel-format=yuv420p",
+    "render:neon": "remotion render src/index.ts Template-NeonPulse out/neon-pulse.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:editorial": "remotion render src/index.ts Template-EditorialCut out/editorial-cut.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:vinyl": "remotion render src/index.ts Template-VinylOrbit out/vinyl-orbit.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:kinetic": "remotion render src/index.ts Template-KineticType out/kinetic-type.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:aurora": "remotion render src/index.ts Template-AuroraGlass out/aurora-glass.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:retro": "remotion render src/index.ts Template-RetroGrid out/retro-grid.mp4 --codec=h264 --pixel-format=yuv420p",
+    "render:templates": "npm run render:neon && npm run render:editorial && npm run render:vinyl && npm run render:kinetic && npm run render:aurora && npm run render:retro",
+    "track:add": "node scripts/add-track.mjs"
+  },
+  "dependencies": {
+    "@remotion/media": "4.0.489",
+    "@remotion/media-utils": "4.0.489",
+    "@remotion/studio": "4.0.489",
+    "@remotion/zod-types": "4.0.489",
+    "mediabunny": "1.50.8",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "remotion": "4.0.489",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.489",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.8.3"
+  }
+}

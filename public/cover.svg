@@ -1,0 +1,72 @@
+<svg width="1600" height="1600" viewBox="0 0 1600 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="base" x1="104" y1="75" x2="1484" y2="1533" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111326"/>
+      <stop offset="0.48" stop-color="#080A12"/>
+      <stop offset="1" stop-color="#150916"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="209" y1="111" x2="1370" y2="1490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C7BFF"/>
+      <stop offset="0.48" stop-color="#33D6FF"/>
+      <stop offset="1" stop-color="#FF5F8F"/>
+    </linearGradient>
+    <radialGradient id="orbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 285) rotate(43) scale(650)">
+      <stop stop-color="#8C7BFF" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#8C7BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1286 1204) rotate(-137) scale(700)">
+      <stop stop-color="#33D6FF" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#33D6FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="75"/>
+    </filter>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="23"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.15"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1600" fill="url(#base)"/>
+  <circle cx="400" cy="285" r="650" fill="url(#orbA)" filter="url(#blur)"/>
+  <circle cx="1286" cy="1204" r="700" fill="url(#orbB)" filter="url(#blur)"/>
+
+  <g opacity="0.23">
+    <path d="M-160 286H1760" stroke="#8C7BFF" stroke-width="2"/>
+    <path d="M-160 412H1760" stroke="#8C7BFF" stroke-width="2"/>
+    <path d="M-160 538H1760" stroke="#8C7BFF" stroke-width="2"/>
+    <path d="M-160 664H1760" stroke="#8C7BFF" stroke-width="2"/>
+    <path d="M-160 790H1760" stroke="#8C7BFF" stroke-width="2"/>
+    <path d="M-160 916H1760" stroke="#8C7BFF" stroke-width="2"/>
+    <path d="M-160 1042H1760" stroke="#8C7BFF" stroke-width="2"/>
+    <path d="M-160 1168H1760" stroke="#8C7BFF" stroke-width="2"/>
+    <path d="M-160 1294H1760" stroke="#8C7BFF" stroke-width="2"/>
+  </g>
+
+  <g opacity="0.33">
+    <path d="M119 -70L921 1670" stroke="#33D6FF" stroke-width="3"/>
+    <path d="M330 -70L1132 1670" stroke="#33D6FF" stroke-width="3"/>
+    <path d="M541 -70L1343 1670" stroke="#33D6FF" stroke-width="3"/>
+    <path d="M752 -70L1554 1670" stroke="#33D6FF" stroke-width="3"/>
+  </g>
+
+  <circle cx="800" cy="704" r="358" stroke="url(#beam)" stroke-width="4" opacity="0.9"/>
+  <circle cx="800" cy="704" r="290" stroke="white" stroke-opacity="0.13" stroke-width="2"/>
+  <circle cx="800" cy="704" r="208" stroke="white" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M800 365L1087 871H513L800 365Z" stroke="url(#beam)" stroke-width="14"/>
+  <path d="M604 823L748 467H829L685 823H604Z" fill="white"/>
+  <path d="M771 823L914 467H995L852 823H771Z" fill="white" fill-opacity="0.9"/>
+  <path d="M728 600H938L907 675H697L728 600Z" fill="url(#beam)"/>
+
+  <text x="118" y="124" fill="#A7ADC2" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="8">BECO INDUSTRIES / NSR-001</text>
+  <text x="118" y="1270" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="900" letter-spacing="-3">SIGNAL</text>
+  <text x="118" y="1380" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="900" letter-spacing="-3">AFTER DARK</text>
+  <text x="122" y="1451" fill="#A7ADC2" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="9">BECO INDUSTRIES</text>
+  <rect x="118" y="1490" width="390" height="6" rx="3" fill="url(#beam)"/>
+
+  <rect width="1600" height="1600" filter="url(#noise)" opacity="0.28"/>
+  <rect x="38" y="38" width="1524" height="1524" rx="18" stroke="white" stroke-opacity="0.12" stroke-width="3"/>
+</svg>
