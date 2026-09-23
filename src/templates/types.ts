@@ -14,6 +14,7 @@ export type MusicVideoRuntime = MusicVideoProps & {
   audioSrc: string;
   coverSrc: string;
   logoSrc: string;
+  backgroundImageSrc: string;
   outroDurationInFrames: number;
   outroStartFrame: number;
   audioDurationInFrames: number;
