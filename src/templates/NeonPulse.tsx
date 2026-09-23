@@ -41,6 +41,11 @@ export const NeonPulse: MusicVideoTemplateComponent = ({runtime}) => {
         energy={energy}
         bass={bass}
         backgroundColor={runtime.backgroundColor}
+        backgroundImageSrc={runtime.backgroundImageSrc}
+        backgroundImageFit={runtime.backgroundImageFit}
+        backgroundImageOpacity={runtime.backgroundImageOpacity}
+        backgroundImageEffect={runtime.backgroundImageEffect}
+        backgroundGlitchIntensity={runtime.backgroundGlitchIntensity}
         primaryColor={runtime.primaryColor}
         secondaryColor={runtime.secondaryColor}
         accentColor={runtime.accentColor}
