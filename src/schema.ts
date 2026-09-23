@@ -28,6 +28,13 @@ export const musicVideoSchema = z.object({
   catalogLabel: z.string(),
   callToAction: z.string(),
   copyrightLine: z.string(),
+  backgroundImageFile: z
+    .string()
+    .describe('Optional background image path or remote URL (used by Neon Pulse)'),
+  backgroundImageFit: z.enum(['cover', 'contain']),
+  backgroundImageOpacity: z.number().min(0).max(1).step(0.05),
+  backgroundImageEffect: z.enum(['none', 'glitch']),
+  backgroundGlitchIntensity: z.number().min(0).max(2).step(0.05),
   backgroundColor: zColor(),
   primaryColor: zColor(),
   secondaryColor: zColor(),
