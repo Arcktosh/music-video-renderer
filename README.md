@@ -151,6 +151,20 @@ Then update `props/custom.json`:
 
 Public asset paths are relative to `public/` and should not begin with `/`.
 
+For `neon-pulse`, you can also layer an image behind the animated neon colors:
+
+```json
+{
+  "backgroundImageFile": "artwork/background.jpg",
+  "backgroundImageFit": "cover",
+  "backgroundImageOpacity": 0.72,
+  "backgroundImageEffect": "glitch",
+  "backgroundGlitchIntensity": 1.0
+}
+```
+
+The glitch is frame-deterministic, so Remotion Studio previews and final renders stay in sync.
+
 ## Preset files
 
 Recommended starting props are included for every visual style:
@@ -216,6 +230,11 @@ npm run render:templates
 | `showProgress` | Toggles the progress rail |
 | `showTimecode` | Toggles elapsed and duration labels |
 | `coverFit` | Chooses `cover` or `contain` for artwork |
+| `backgroundImageFile` | Optional image behind the Neon Pulse color field; accepts a public asset path or remote URL |
+| `backgroundImageFit` | Chooses `cover` or `contain` for the Neon Pulse background image |
+| `backgroundImageOpacity` | Controls background image visibility from `0` to `1` |
+| `backgroundImageEffect` | `none` or deterministic `glitch` slices on the Neon Pulse background image |
+| `backgroundGlitchIntensity` | Controls glitch displacement/intensity from `0` to `2` |
 | Color properties | Control the template palette and text colors |
 
 ## Project structure
