@@ -37,6 +37,9 @@ export const BrandedMusicVideo: React.FC<MusicVideoProps> = (props) => {
   const audioSrc = resolveAsset(props.audioFile);
   const coverSrc = props.coverFile ? resolveAsset(props.coverFile) : "";
   const logoSrc = props.logoFile ? resolveAsset(props.logoFile) : "";
+  const backgroundImageSrc = props.backgroundImageFile
+    ? resolveAsset(props.backgroundImageFile)
+    : "";
   const audioData = useAudioData(audioSrc);
 
   const configuredOutroFrames = Math.max(
@@ -153,6 +156,7 @@ export const BrandedMusicVideo: React.FC<MusicVideoProps> = (props) => {
     audioSrc,
     coverSrc,
     logoSrc,
+    backgroundImageSrc,
     outroDurationInFrames,
     outroStartFrame,
     audioDurationInFrames,
